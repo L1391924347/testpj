@@ -1,0 +1,59 @@
+
+pc@DESKTOP-MQREA1E MINGW64 ~
+$ cd C:/Users/pc/Desktop/Gitub_D
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ echo "# testpj" >> README.md
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ git init
+Initialized empty Git repository in C:/Users/pc/Desktop/Gitub_D/.git/
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (master)
+$ git add README.md
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (master)
+$ git commit -m "first commit"
+[master (root-commit) 0d1d001] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (master)
+$ git branch -M main
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ git remote add origin git@github.com:L1391924347/testpj.git
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:L1391924347/testpj.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ git add .
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ git commit -m '第二次提交'
+[main 037db10] 第二次提交
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hh/22.txt
+
+pc@DESKTOP-MQREA1E MINGW64 ~/Desktop/Gitub_D (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 332 bytes | 332.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:L1391924347/testpj.git
+   0d1d001..037db10  main -> main
